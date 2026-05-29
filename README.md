@@ -1,0 +1,2 @@
+# actionsTestRepository
+GitHub Actionの承認プロセス検討を実施するためのリポジトリ。
