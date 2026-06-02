@@ -23,6 +23,10 @@ on:
           - jpbank
           - general
         required: true
+      confirmation:
+        description: '処理を続行しますか？ (yes/no)'
+        required: true
+        default: 'no'
 
 jobs:
   tests:
