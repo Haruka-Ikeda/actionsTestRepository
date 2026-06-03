@@ -7,13 +7,18 @@ on:
         type: choice
         description: 'Environment'
         options:
-          - dev-bpmfin
-          - sandbox-bpmfin
-          - stage-bpmfin-a
-          - stage-bpmfin-b
-          - prod-bpmfin-a
-          - prod-bpmfin-b
-        default: dev-bpmfin
+          - dev
+          - sandbox
+          - stage
+          - prod
+        default: dev
+      environmentOption:
+        type: choice
+        description: 'EnvironmentOption'
+        options:
+          - bpmfin
+          - bpmfin-a
+          - bpmfin-b
       tenantId:
         type: choice
         description: 'Tenant ID'
@@ -21,7 +26,6 @@ on:
           - ganb
           - stc
           - jpbank
-          - general
         required: true
 
 jobs:
