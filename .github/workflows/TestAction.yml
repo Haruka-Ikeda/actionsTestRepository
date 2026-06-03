@@ -12,6 +12,7 @@ on:
           - stage
           - prod
         default: dev
+        required: true
       environmentOption:
         type: choice
         description: 'EnvironmentOption'
@@ -19,6 +20,7 @@ on:
           - bpmfin
           - bpmfin-a
           - bpmfin-b
+        required: true
       tenantId:
         type: choice
         description: 'Tenant ID'
