@@ -5,7 +5,7 @@ on:
     inputs:
       environment:
         type: string
-        description: 'Github environment, for example: corp-web-dev-bpmfin-ganb'
+        description: 'Github environment, for example: dev'
         required: true
       environmentFile:
         type: string
