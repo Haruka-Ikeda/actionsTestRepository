@@ -38,7 +38,5 @@ jobs:
     with:
       environment: ${{ github.event.inputs.environment }}
       environmentFile: ${{ github.event.inputs.environment }}-${{ github.event.inputs.environmentOption }}-${{ github.event.inputs.tenantId }}
-      zone: fin-zone
-      app: bank-web
       tenantId: ${{ github.event.inputs.tenantId }}
     secrets: inherit
