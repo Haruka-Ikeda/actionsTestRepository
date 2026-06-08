@@ -12,6 +12,10 @@ on:
           - sandbox
           - stage
           - prod
+          - pre1
+          - pre2
+          - pre3
+          - pre4
         default: dev
         required: true
       environmentOption:
