@@ -1,1 +1,26 @@
+name: 'Reusable Continuous Deployment'
 
+on:
+  workflow_call:
+    inputs:
+      environment:
+        type: string
+        description: 'Github environment, for example: corp-web-dev-bpmfin-ganb'
+        required: true
+      environmentFile:
+        type: string
+        description: 'Environment file, for example: dev-bpmfin-ganb'
+        required: true
+      tenantId:
+        type: string
+        description: 'Tenant ID, for example: ganb'
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world! environment:${{ inputs.environment }}, environmentFile:${{ inputs.environmentFile }}, tenantId:${{ inputs.tenantId }}
