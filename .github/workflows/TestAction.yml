@@ -41,3 +41,4 @@ jobs:
       zone: fin-zone
       app: bank-web
       tenantId: ${{ github.event.inputs.tenantId }}
+    secrets: inherit
