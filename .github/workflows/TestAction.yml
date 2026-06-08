@@ -1,4 +1,5 @@
 name: Test CI
+run-name: '[${{ github.event.inputs.environment }}-${{ github.event.inputs.environmentOption }}][${{ github.event.inputs.tenantId }}][branchTag] Continuous Deployment'
 
 on:
   workflow_dispatch:
